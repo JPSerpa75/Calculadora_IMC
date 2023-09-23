@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="container">
+            <header>
+                <h2>Calculadora IMC</h2>
+                <p>Calcule seu índice de massa corporal</p>
+            </header>
+                <form>
+                    <div class="row">
+                        <label for="peso" class="label">Peso:</label>
+                        <input type="number" id="peso" class="form-control-lg" placeholder="Em kilogramas">
+                    </div>
+                    <div class="row">
+                        <label for="altura" class="label">Altura:</label>
+                        <input type="number" id="altura" class="form-control-lg" placeholder="Em centímetros">
+                    </div>
+                </form>
+        
+                <div class="row">
+                    <button class="btn btn-primary btn-lg" onclick="calcular()">Calcular</button>
+                </div>
+
+                <div class="row text-center" id="result" onclick="clearMsg()">
+                    <p id="msg">Aqui vai o resultado</p>
+                </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>
